@@ -1,0 +1,5 @@
+.config/go/
+.config/systemd/
+.config/configstore
+.config/nushell/history.txt
+.config/fish/fish_variables
