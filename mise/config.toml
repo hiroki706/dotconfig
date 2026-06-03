@@ -22,7 +22,7 @@ gh = "latest"
 [env]
 EDITOR = "nvim"
 BROWSER = "explorer.exe"
-XDG_CONFIG_HOME = "{{env.HOME}}/.config"
+XDG_CONFIG_HOME = "{{ get_env(name='HOME', default=env.USERPROFILE) }}/.config"
 
 [settings]
 idiomatic_version_file_enable_tools = ["python"]
