@@ -1,5 +1,6 @@
-.config/go/
-.config/systemd/
-.config/configstore
-.config/nushell/history.txt
-.config/fish/fish_variables
+go/
+systemd/
+configstore
+nushell/history.txt
+fish/fish_variables
+gh/hosts.yml
