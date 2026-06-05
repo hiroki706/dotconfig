@@ -1,5 +1,4 @@
 [tools]
-eza = "latest"
 fd = "latest"
 fzf = "latest"
 lazygit = "latest"
