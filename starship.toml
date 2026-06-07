@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$username@Linux.$shell\
+$username@$os.$shell\
 $directory\
 [$git_branch$git_status$git_state$git_commit](fg:color_orange) \
 $c$python$rust$golang$nodejs$deno$java$haskell\
@@ -32,7 +32,7 @@ color_yellow = '#d79921'
 
 [os]
 disabled = false
-format = "[@$name]($style)"
+format = "[$name]($style)"
 
 [shell]
 disabled = false
