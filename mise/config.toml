@@ -15,8 +15,8 @@ typst = "latest"
 usage = "latest"
 uv = "latest"
 zig = "latest"
-codex = "latest"
 gh = "latest"
+codex = "latest"
 
 [env]
 EDITOR = "nvim"
@@ -25,6 +25,7 @@ XDG_CONFIG_HOME = "{{ env.HOME }}/.config"
 [settings]
 idiomatic_version_file_enable_tools = ["python"]
 experimental = true
+minimum_release_age = "2h"
 
 [settings.npm]
 package_manager = "pnpm"
