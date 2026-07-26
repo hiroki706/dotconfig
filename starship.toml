@@ -59,7 +59,7 @@ truncation_symbol = "…/"
 home_symbol = '~'
 
 [directory.substitutions]
-"Documents" = "󰈙 "
+"Documents" = "󰈙"
 "Downloads" = ""
 "Music" = "󰝚"
 "Pictures" = " "
