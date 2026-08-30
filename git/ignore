@@ -3,10 +3,9 @@ __pycache__/
 *.sqlite3
 venv/
 .venv/
-memory-bank/
-.clinerules
 planing/
 .planning/
 .env/
+.env
 dist/
 *.local.*
