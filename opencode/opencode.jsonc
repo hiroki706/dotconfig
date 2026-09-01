@@ -1,3 +1,23 @@
 {
-  "$schema": "https://opencode.ai/config.json"
+  "$schema": "https://opencode.ai/config.json",
+
+  // サブエージェント同士の連鎖を防ぎ、メインだけが委譲を管理する。
+  "subagent_depth": 1,
+
+  "agent": {
+    // モデルは指定しない。現在のセッションで /model から選んだモデルを使う。
+    "build": {
+      "prompt": "{file:./prompts/orchestrator.txt}",
+      "permission": {
+        // グローバルの専門役と、明示的に自動委譲を許可したプロジェクト固有役だけを公開する。
+        "task": {
+          "*": "deny",
+          "explore": "allow",
+          "coder": "allow",
+          "consultant": "allow",
+          "autorun-*": "allow"
+        }
+      }
+    }
+  }
 }
