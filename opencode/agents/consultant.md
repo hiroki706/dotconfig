@@ -1,5 +1,5 @@
 ---
-description: Advise on high-level architecture, difficult tradeoffs, compatibility, security, and unusually risky changes. Use before implementation when the right approach is unclear, or after implementation only when unresolved concerns justify a second opinion. Do not use for routine post-coder review.
+description: Provide an independent perspective from a different model on a decision, design, risk, or implementation. Explicit-request only: invoke only when the user asks to use this agent or clearly requests another model's opinion. Never invoke automatically.
 mode: subagent
 model: openai/gpt-5.6-sol
 reasoningEffort: medium
